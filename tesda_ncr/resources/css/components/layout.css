@@ -1,0 +1,23 @@
+@import 'tailwindcss';
+
+@layer components {
+    .nav-item {
+        @apply text-white font-medium px-2 py-1 uppercase focus:outline-none;
+    }
+
+    .nav-dropdown {
+        @apply absolute bg-white border invisible opacity-0 rounded shadow-lg transition-all duration-200 w-60 z-50 group-hover:opacity-100 group-hover:visible;
+    }
+
+    .nav-dropdown-item {
+        @apply text-gray-700 block px-4 py-2 hover:bg-gray-100 hover:font-bold;
+    }
+    
+    .sidebar-item {
+        @apply text-gray-700 hover:text-white hover:bg-sky-400 flex items-center p-2 rounded-md space-x-2;
+    }
+    
+    .sidebar-subitem {
+        @apply text-gray-700 hover:text-white hover:bg-sky-400 flex px-2 py-1 rounded-sm space-x-2;
+    }
+}
